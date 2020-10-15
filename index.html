@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anotador de Truco</title>
+	<link rel="stylesheet" href="estilos.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	
+	<form id="pantalla1" class="visible">
+		<input type="name" id="equipo1" name="equipo1" placeholder="Equipo 1"><br><br>
+		<input type="name" id="equipo2" name="equipo2" placeholder="Equipo 2"><br><br>
+
+		¿A cuantos puntos se juega?
+
+		<br><br>
+
+		<div class="radio">
+			<input type="radio" id="a24" name="choice" value="24">24
+			<input type="radio" id="a30" name="choice" value="30">30
+		</div>
+		   
+
+		<br><br>
+
+		<input type="button" id="iniciar" name="iniciar" value="Iniciar">
+		<br><br>
+	</form>
+
+	<form id="pantalla2" class="oculto">
+
+			<div id="nombres">
+				<p id="p1" class="equipo1"></p>
+				<p id="p2" class="equipo2"></p>
+			</div>
+			
+
+			<div id="puntaje">
+				
+				<div class="botonera">
+					<input type="button" id="sumarE1" name="sumarEquipo1" value="+"><p id="puntosE1" class="puntosE1">0</p><input type="button" id="restarE1" name="restarEquipo1" value="-">
+				</div>	
+				
+					<p id="puntos"></p>
+
+				<div class="botonera">
+					<input type="button" id="sumarE2" name="sumarEquipo2" value="+"><p id="puntosE2" class="puntosE2">0</p><input type="button" id="restarE2" name="restarEquipo2" value="-">
+				</div>
+
+			</div>
+
+		<div id="columnaFosforos" class="contenedor">
+			
+			<div id="fosforoEquipo1">
+				<div class="fosforos">
+					<div class="fila1">
+						<img class="imagen" id="fosforo1" src="0.png" />
+						<img class="imagen" id="fosforo2" src="0.png" />
+						<img class="imagen" id="fosforo3" src="0.png" />
+					</div>
+					<div class="fila2">
+						<img class="imagen" id="fosforo4" src="0.png" />
+						<img class="imagen" id="fosforo5" src="0.png" />
+						<img class="imagen" id="fosforo6" src="0.png"  />
+					</div>
+					
+				</div>
+			</div>
+			
+			<div id="fosforoEquipo2">
+				<div class="fosforos">
+					<div class="fila3">
+						<img class="imagen" id="fosforo7" src="0.png" />
+						<img class="imagen" id="fosforo8" src="0.png" />
+						<img class="imagen" id="fosforo9" src="0.png" />
+					</div>
+					<div class="fila4">
+						<img class="imagen" id="fosforo10" src="0.png" />
+						<img class="imagen" id="fosforo11" src="0.png" />
+						<img class="imagen" id="fosforo12" src="0.png" />
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<input type="button" id="fin" name="fin" value="Fin">
+	</form>
+</body>
+</html>
